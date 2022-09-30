@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+html,
+body {
+  font-family: "Oxygen Mono", monospace;
+  background-color: #212230;
+  color: #ffffff;
+
+  width: 100vw;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: calc(3em + 1vw);
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.skills-section {
+  text-align: center;
+}
+
+.skills-list div {
+  display: inline-table;
+}
+
+.skill img {
+  width: 110px;
+}
