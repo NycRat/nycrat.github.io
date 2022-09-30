@@ -8,24 +8,68 @@ body {
 
   width: 100vw;
   margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: inline-table;
+}
+
+header {
+  border-bottom: 5px solid #541e4a;
 }
 
 .title {
-  text-align: center;
-  font-size: calc(3em + 1vw);
+  /* text-align: center; */
+  font-size: calc(2.5em + 1vw);
   padding: 0;
-  margin: 0;
-  margin-top: 30px;
+  margin: 30px 30px;
 }
 
 .skills-section {
-  text-align: center;
+  display: inline-table;
+  margin: 0 30px;
+  width: 35vw;
+}
+
+.section-title {
+  font-size: calc(1.5em + 1vw);
 }
 
 .skills-list div {
   display: inline-table;
 }
 
+.skill-title {
+}
+
+.skill {
+  text-align: center;
+}
+
 .skill img {
-  width: 110px;
+  width: calc((35vw - 50px) / 5);
+  border-radius: 10px;
+}
+
+.project-section {
+  display: inline-table;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills-section {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+  }
+  .skill img {
+    width: calc((100vw - 100px) / 4);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skill img {
+    width: calc((100vw - 80px) / 3);
+  }
 }
