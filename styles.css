@@ -19,14 +19,22 @@ body {
 }
 
 header {
+  display: inline-block;
+  width: 100vw;
   border-bottom: 5px solid #541e4a;
 }
 
 .title {
-  /* text-align: center; */
+  display: inline-block;
+  font-weight: bold;
   font-size: calc(2.5em + 1vw);
   padding: 0;
   margin: 20px 30px;
+  width: fit-content;
+}
+
+.contact-section a {
+  color: #8bf0a4;
 }
 
 .skills-section {
@@ -45,6 +53,9 @@ header {
 
 .skills-list-list {
   overflow-y: auto;
+  padding-left: 10px;
+  border: 1px solid #52c4ad;
+  border-radius: 10px;
 }
 
 .skills-list div {
@@ -116,6 +127,9 @@ header {
     max-height: auto;
     overflow: auto;
   }
+  .title {
+    text-align: center;
+  }
   .skills-section {
     width: calc(100% - 60px);
     height: auto;
@@ -132,6 +146,6 @@ header {
     font-size: calc(0.4em + 2vw);
   }
   .skill img {
-    width: calc((100vw - 80px) / 3);
+    width: calc((100vw - 100px) / 3);
   }
 }
