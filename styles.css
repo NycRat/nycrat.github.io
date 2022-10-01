@@ -63,25 +63,45 @@ header {
 
 .project-section {
   display: inline-table;
-  width: 60vw;
+  width: 59vw;
   max-height: 100%;
 }
 
 .project {
   display: inline-table;
-  border: 1px solid #fff;
-  width: calc(50% - 12px);
-  height: 300px;
-  margin: 0;
+  border: 1px solid #b7b7d5;
+  width: calc(50% - 22px);
+  height: 350px;
+  margin: 5px;
   padding-left: 10px;
+  border-radius: 20px;
+}
+
+.project .left {
+  display: inline-table;
+  vertical-align: top;
+  width: 38%;
+}
+
+.project .right {
+  display: inline-table;
+  vertical-align: top;
+  width: 55%;
 }
 
 .project h3 {
+  margin-left: 20px;
   font-size: 1.3em;
 }
 
 .project a {
   color: #8bf0a4;
+}
+
+.project img {
+  width: 250px;
+  border: 1px solid #52c4ad;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -106,6 +126,7 @@ header {
     width: calc(100% - 60px);
   }
   .project {
+    width: calc(100% - 22px);
   }
   .skill {
     font-size: calc(0.4em + 2vw);
