@@ -53,7 +53,6 @@ header {
 
 .skills-list-list {
   overflow-y: scroll;
-  padding-left: 10px;
   border: 1px solid #52c4ad;
   border-radius: 6px;
   padding-left: 20px;
@@ -74,19 +73,31 @@ header {
 }
 
 .project-section {
-  display: inline-table;
+  display: inline-grid;
   width: 59vw;
-  max-height: 100%;
+  height: calc(95vh - 100px);
+}
+
+.middle {
+  display: inline-table;
+}
+
+.project-list {
+  overflow-y: scroll;
+  border: 1px solid #52c4ad;
+  border-radius: 6px;
 }
 
 .project {
   display: inline-table;
-  border: 1px solid #b7b7d5;
+  /* border: 1px solid #b7b7d5; */
   width: calc(50% - 22px);
   height: 350px;
   margin: 5px;
   padding-left: 10px;
   border-radius: 20px;
+  /* background-color: #480f63; */
+  background-color: #302941;
 }
 
 .project img {
@@ -131,12 +142,23 @@ header {
   body {
     max-height: auto;
     overflow: auto;
+    overflow-x: hidden;
   }
   .title {
+    text-align: center;
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  header {
+    text-align: center;
+  }
+  .section-title {
     text-align: center;
   }
   .skills-section {
     width: calc(100% - 60px);
+    margin: 20px;
     height: auto;
   }
   .skills-list-list {
@@ -146,6 +168,11 @@ header {
     margin: 0 30px;
     display: inilne-grid;
     width: calc(100% - 60px);
+    height: auto;
+  }
+  .project-list {
+    overflow-y: auto;
+    max-height: none;
   }
   .project {
     width: calc(100% - 22px);
