@@ -50,11 +50,12 @@ header {
   font-size: calc(1.5em + 1vw);
   margin: 20px 0;
   margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
 }
 
 .skills-list-list {
   overflow-y: scroll;
-  border: 1px solid #52c4ad;
+  /* border: 1px solid #52c4ad; */
   border-radius: 6px;
   padding-left: 20px;
 }
@@ -85,7 +86,7 @@ header {
 
 .project-list {
   overflow-y: scroll;
-  border: 1px solid #52c4ad;
+  /* border: 1px solid #52c4ad; */
   border-radius: 6px;
 }
 
