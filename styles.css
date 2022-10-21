@@ -38,6 +38,10 @@ header {
   color: #8bf0a4;
 }
 
+.nav-section a {
+  color: #ecd2ff;
+}
+
 .skills-section {
   display: inline-grid;
   /* margin: 0 30px; */
