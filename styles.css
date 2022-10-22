@@ -109,6 +109,11 @@ header {
   border-radius: 20px;
   /* background-color: #480f63; */
   background-color: #302941;
+  transition: box-shadow 0.3s;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 6px #ece4f5c3;
 }
 
 .project img {
