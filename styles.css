@@ -23,7 +23,15 @@ header {
   display: inline-block;
   width: 100vw;
   border-bottom: 5px solid #541e4a;
-  text-shadow: 0px 0px 5px #ffffffaa;
+  text-shadow: 0px 0px 2px #ffffffaa;
+}
+
+header a {
+  transition: all 0.3s;
+}
+
+header a:hover {
+  text-shadow: 0px 0px 8px #ffffff;
 }
 
 .title {
@@ -157,6 +165,12 @@ header {
 .project h3 {
   margin-left: 20px;
   font-size: 1.4em;
+  text-shadow: 0px 0px 10px #cfc3d498;
+  transition: all 0.5s;
+}
+
+.project:hover > h3 {
+  text-shadow: 0px 0px 10px #d6d766ff;
 }
 
 .project a {
