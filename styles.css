@@ -42,7 +42,6 @@ header a:hover {
   margin: 20px 30px;
   width: fit-content;
 
-  transition: all 0.6s;
   text-shadow: 0px 0px 10px #e165b6d6;
 }
 
@@ -170,12 +169,30 @@ header a:hover {
 }
 
 .project:hover > h3 {
-  text-shadow: 0px 0px 10px #d6d766ff;
+  text-shadow: 0px 0px 10px #d6d766;
 }
 
 .project a {
   color: #8bf0a4;
   margin-left: 24px;
+}
+
+.aboutme {
+  font-size: 1.2em;
+  margin: 20px 30px; 
+  padding: 15px 20px;
+  /* text-align: center; */
+  width: 50%;
+  box-shadow: 0 0 4px #ffffff;
+}
+
+.aboutme a {
+  color: #c8e6ff;
+  transition: text-shadow 0.3s;
+}
+
+.aboutme a:hover {
+  text-shadow: 0px 0px 8px #d6d7f5;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -231,6 +248,15 @@ header a:hover {
   }
   .skill img {
     width: calc((100vw - 135px) / 5);
+  }
+  .aboutme {
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px 20px;
+    /* text-align: center; */
+    width: 80%;
+    box-shadow: 0 0 5px #ffffff;
   }
 }
 
