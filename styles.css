@@ -8,7 +8,7 @@ body {
   color: #ffffff;
 
   width: 100vw;
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   margin: 0;
 
@@ -88,7 +88,7 @@ header a:hover {
   text-align: center;
   font-size: calc(1vw + 2px);
   margin-bottom: 10px;
-  transition: all 0.5s;
+  transition: text-shadow 0.5s;
 }
 
 .skill:hover {
@@ -179,7 +179,7 @@ header a:hover {
 
 .aboutme {
   font-size: 1.2em;
-  margin: 20px 30px; 
+  margin: 20px 30px;
   padding: 15px 20px;
   /* text-align: center; */
   width: 50%;
@@ -193,6 +193,70 @@ header a:hover {
 
 .aboutme a:hover {
   text-shadow: 0px 0px 8px #d6d7f5;
+}
+
+.resume-left {
+  position: absolute;
+  height: 100%;
+}
+
+.resume-right {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+
+  left: 65%;
+  transform: translateX(-50%);
+}
+
+.resume-title {
+  font-size: calc(5vw + 1em);
+  position: absolute;
+  text-shadow: 0px 0px 15px #c3e100;
+  top: calc(100% / 3);
+  left: calc((100vw - (80vh * (8.5 / 11))) / 4); /* idk */
+  transform: translate(-25%, -50%);
+}
+
+.resume-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  height: 80vh;
+  width: 0%;
+  padding-right: calc(80vh * (8.5 / 11));
+  transition: box-shadow 0.35s;
+  box-shadow: 0px 0px 10px #73a5e144;
+}
+
+.resume-container:hover {
+  box-shadow: 0px 0px 15px #73b9c3;
+}
+
+.resume-click {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.resume {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -258,11 +322,39 @@ header a:hover {
     width: 80%;
     box-shadow: 0 0 5px #ffffff;
   }
+  .resume-left {
+    /* TODO - Make this work */
+    display: none;
+    /* position: absolute; */
+    /* top: 0%; */
+    /* left: 0%; */
+    /* z-index: 10; */
+  }
+  .resume-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .resume-title {
+    /* TODO - Make this work */
+    /* position: absolute; */
+    /* top: 20%; */
+    /* z-index: 10; */
+  }
 }
 
 @media only screen and (max-width: 650px) {
   .skill img {
     width: calc((100vw - 115px) / 3);
+  }
+  .resume-container {
+    width: 90%;
+    height: 0;
+    padding-right: 0;
+    padding-top: calc(90% * (11 / 8.5));
   }
 }
 
