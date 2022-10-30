@@ -11,7 +11,7 @@ html {
   margin: 0;
 
   scroll-behavior: smooth;
-  scroll-padding-top: 150px;
+  scroll-padding-top: 135px;
 
   -webkit-font-smoothing: antialiased;
   display: inline-table;
@@ -212,14 +212,14 @@ header > .title {
 
 #resume-section > .left {
   position: absolute;
-  height: calc(100% - 150px);
+  height: calc(100% - 135px);
   width: 40%;
 }
 
 #resume-section > .right {
   position: absolute;
   width: 60%;
-  height: calc(100% - 150px);
+  height: calc(100% - 135px);
 
   left: 65%;
   transform: translateX(-50%);
@@ -239,7 +239,7 @@ header > .title {
   display: block;
   overflow: hidden;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 35px;
   height: 80vh;
   width: 0%;
   padding-right: calc(80vh * (8.5 / 11));
