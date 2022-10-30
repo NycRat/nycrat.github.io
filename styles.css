@@ -35,27 +35,27 @@ header {
   padding-bottom: 20px;
 }
 
-header a {
+header > a {
   transition: all 0.3s;
 }
 
-header a:hover {
+header > a:hover {
   text-shadow: 0px 0px 8px #ffffff;
 }
 
-.title {
+header > .title {
   display: inline-block;
   font-weight: bold;
   font-size: calc(2.5em + 1vw);
   padding: 0;
-  margin: 20px 0px;
+  margin: 15px 0px;
   width: 100vw;
   text-align: center;
 
   text-shadow: 0px 0px 10px #e165b6d6;
 }
 
-.contact-section a {
+.contact-section > a {
   color: #8bf0a4;
 }
 
@@ -75,7 +75,7 @@ header a:hover {
   height: calc(95vh - 100px);
 }
 
-.section-title {
+#portfolio-section > div > .title {
   font-size: calc(1.5em + 1vw);
   margin: 20px 0;
   margin-bottom: 10px;
@@ -83,14 +83,14 @@ header a:hover {
   text-shadow: 0px 0px 5px #c5cdff;
 }
 
-.skills-list-list {
+.skills-section .list-list {
   overflow-y: scroll;
   /* border: 1px solid #52c4ad; */
   border-radius: 6px;
   padding-left: 20px;
 }
 
-.skills-list div {
+.skills-section .list div {
   display: inline-table;
 }
 
@@ -121,7 +121,7 @@ header a:hover {
   display: inline-table;
 }
 
-.project-list {
+.project-section .list {
   overflow-y: scroll;
   /* border: 1px solid #52c4ad; */
   border-radius: 6px;
@@ -159,13 +159,13 @@ header a:hover {
   }
 }
 
-.project .left {
+.project > .left {
   display: inline-table;
   vertical-align: top;
   width: 38%;
 }
 
-.project .right {
+.project > .right {
   display: inline-table;
   vertical-align: top;
   width: 55%;
@@ -187,43 +187,45 @@ header a:hover {
   margin-left: 24px;
 }
 
-.aboutme {
+#aboutme-section > p {
   text-align: center;
   font-size: 1.2em;
   margin: 0;
   width: 100vw;
 
-  padding: calc(120px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw) calc(15px + 5vw);
+  padding: calc(120px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw)
+    calc(15px + 5vw);
   box-sizing: border-box;
 
-  border-bottom: 5px dotted #3c9696;
+  border-bottom: 2px solid #3c9696;
 }
 
-.aboutme a {
+#aboutme-section > p > a {
   color: #c8e6ff;
   transition: text-shadow 0.3s;
+  text-shadow: 0px 0px 8px #d6d7f57f;
 }
 
-.aboutme a:hover {
+#aboutme-section > p > a:hover {
   text-shadow: 0px 0px 8px #d6d7f5;
 }
 
-.resume-left {
+#resume-section > .left {
   position: absolute;
-  height: calc(100% - 120px);
+  height: calc(100% - 150px);
   width: 40%;
 }
 
-.resume-right {
+#resume-section > .right {
   position: absolute;
   width: 60%;
-  height: calc(100% - 120px);
+  height: calc(100% - 150px);
 
   left: 65%;
   transform: translateX(-50%);
 }
 
-.resume-title {
+#resume-section > .left > .title {
   font-size: calc(5vw + 1em);
   position: absolute;
   text-shadow: 0px 0px 15px #c3e100;
@@ -232,7 +234,7 @@ header a:hover {
   transform: translate(-25%, -50%);
 }
 
-.resume-container {
+#resume-section .container {
   position: relative;
   display: block;
   overflow: hidden;
@@ -245,11 +247,11 @@ header a:hover {
   box-shadow: 0px 0px 10px #73a5e144;
 }
 
-.resume-container:hover {
+#resume-section .container:hover {
   box-shadow: 0px 0px 15px #73b9c3;
 }
 
-.resume-click {
+#resume-section .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -262,7 +264,7 @@ header a:hover {
   cursor: pointer;
 }
 
-.resume {
+#resume-section .resume {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -286,7 +288,7 @@ header a:hover {
     overflow: auto;
     overflow-x: hidden;
   }
-  .section-title {
+  #portfolio-section > div > .title {
     text-align: center;
   }
   .skills-section {
@@ -294,7 +296,7 @@ header a:hover {
     margin: 20px;
     height: auto;
   }
-  .skills-list-list {
+  .skills-section .list-list {
     overflow-y: auto;
   }
   .project-section {
@@ -302,7 +304,7 @@ header a:hover {
     width: calc(100vw - 60px);
     height: auto;
   }
-  .project-list {
+  .project-section .list {
     overflow-y: auto;
     max-height: none;
   }
@@ -318,10 +320,10 @@ header a:hover {
   .skill img {
     width: calc((100vw - 135px) / 5);
   }
-  .resume-left {
+  #resume-section > .left {
     display: none;
   }
-  .resume-right {
+  #resume-section > .right {
     position: absolute;
     width: 100%;
     /* height: 100%; */
@@ -335,7 +337,7 @@ header a:hover {
   .skill img {
     width: calc((100vw - 115px) / 3);
   }
-  .resume-container {
+  #resume-section .container {
     width: 90%;
     height: 0;
     padding-right: 0;

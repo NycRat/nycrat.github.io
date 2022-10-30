@@ -8,39 +8,41 @@
     <title>Eric Xiao</title>
   </head>
   <header>
-    <span class="title">Eric Xiao</span>
+    <h1 class="title">Eric Xiao</h1>
     <span class="contact-section">
       <a href="mailto:ericxiao0000@gmail.com">Email</a>
       <a href="https://github.com/NycRat">Github</a>
     </span>
     <span class="nav-section">
-      <a href="#aboutme">About Me</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#resume">Resume</a>
+      <a href="#aboutme-section">About Me</a>
+      <a href="#portfolio-section">Portfolio</a>
+      <a href="#resume-section">Resume</a>
     </span>
   </header>
   <br />
   <body>
     <!-- ABOUTME SECTION -->
-    <p class="aboutme" id="aboutme">
-      My name is Eric Xiao; I am programmer and highschool student. I have
-      previously done some game development and competitive programming, but I
-      am currently focused on full stack web development. I volunteer as a
-      teacher for a C++ class; it gives me experience teaching, and also
-      experience using C++. Whenever I have free time, I enjoy photography. You
-      can see my photographs on my
-      <a href="https://nycrat.github.io/photo-gallery/">photography site.</a>
-    </p>
+    <div id="aboutme-section">
+      <p>
+        My name is Eric Xiao; I am programmer and highschool student. I have
+        previously done some game development and competitive programming, but I
+        am currently focused on full stack web development. I volunteer as a
+        teacher for a C++ class; it gives me experience teaching, and also
+        experience using C++. Whenever I have free time, I enjoy photography.
+        You can see my photographs on my
+        <a href="https://nycrat.github.io/photo-gallery/">photography site.</a>
+      </p>
+    </div>
     <!-- ABOUTME SECTION -->
 
     <!-- PORTFOLIO SECTION -->
-    <div id="portfolio">
+    <div id="portfolio-section">
       <div class="skills-section">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="title">Skills</h2>
 
-        <div class="skills-list-list">
-          <h3 class="skill-title">Languages</h3>
-          <span class="skills-list">
+        <div class="list-list">
+          <h3 class="title">Languages</h3>
+          <span class="list">
             <div class="skill">
               <img src="assets/c++_logo.jpg" />
               <br />
@@ -83,8 +85,8 @@
             </div>
           </span>
 
-          <h3 class="skill-title">Web Development</h3>
-          <span class="skills-list">
+          <h3 class="title">Web Development</h3>
+          <span class="list">
             <div class="skill">
               <img src="assets/react_logo.jpg" />
               <br />React
@@ -111,8 +113,8 @@
             </div>
           </span>
 
-          <h3 class="skill-title">Databases</h3>
-          <span class="skills-list">
+          <h3 class="title">Databases</h3>
+          <span class="list">
             <div class="skill">
               <img src="assets/mongodb_logo.jpg" />
               <br />MongoDB
@@ -123,8 +125,8 @@
             </div>
           </span>
 
-          <h3 class="skill-title">AWS</h3>
-          <span class="skills-list">
+          <h3 class="title">AWS</h3>
+          <span class="list">
             <div class="skill">
               <img src="assets/rds_logo.jpg" />
               <br />RDS
@@ -135,8 +137,8 @@
             </div>
           </span>
 
-          <h3 class="skill-title">Other</h3>
-          <span class="skills-list">
+          <h3 class="title">Other</h3>
+          <span class="list">
             <div class="skill">
               <img src="assets/github_logo.jpg" />
               <br />Github
@@ -149,9 +151,9 @@
         </div>
       </div>
       <div class="project-section">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="title">Projects</h2>
 
-        <div class="project-list">
+        <div class=project-list">
           <div class="middle">
             <div class="project">
               <h3>Photography Site</h3>
@@ -257,7 +259,7 @@
                 <li>Lua</li>
               </ul>
             </div>
-            <div class="project" id="haha">
+            <div class="project">
               <h3>Console Arcade</h3>
               <a href="https://github.com/NycRat/console-arcade/"
                 >Project Link</a
@@ -273,12 +275,12 @@
     <!-- PORTFOLIO SECTION -->
 
     <!-- RESUME SECTION -->
-    <div id="resume">
-      <div class="resume-left">
-        <h1 class="resume-title">Resume</h1>
+    <div id="resume-section">
+      <div class="left">
+        <h1 class="title">Resume</h1>
       </div>
-      <div class="resume-right">
-        <div class="resume-container">
+      <div class="right">
+        <div class="container">
           <object
             class="resume"
             data="assets/resume.pdf#toolbar=0&view=fitH"
@@ -293,7 +295,7 @@
           </object>
           <div
             onclick="window.location = 'assets/resume.pdf'"
-            class="resume-click"
+            class="overlay"
           ></div>
         </div>
       </div>
