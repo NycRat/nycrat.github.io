@@ -35,11 +35,11 @@ header {
   padding-bottom: 20px;
 }
 
-header > a {
-  transition: all 0.3s;
+header a {
+  transition: text-shadow 0.3s;
 }
 
-header > a:hover {
+header a:hover {
   text-shadow: 0px 0px 8px #ffffff;
 }
 
@@ -171,15 +171,16 @@ header > .title {
   width: 55%;
 }
 
-.project h3 {
+.project > h3 {
   margin-left: 20px;
   font-size: 1.4em;
   text-shadow: 0px 0px 10px #cfc3d498;
-  transition: all 0.5s;
+  transition: text-shadow 0.5s, color 0.5s;
 }
 
 .project:hover > h3 {
   text-shadow: 0px 0px 10px #d6d766;
+  color: #fffff0;
 }
 
 .project a {
@@ -193,7 +194,7 @@ header > .title {
   margin: 0;
   width: 100vw;
 
-  padding: calc(120px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw)
+  padding: calc(110px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw)
     calc(15px + 5vw);
   box-sizing: border-box;
 
