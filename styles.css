@@ -11,7 +11,7 @@ html {
   margin: 0;
 
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 150px;
 
   -webkit-font-smoothing: antialiased;
   display: inline-table;
@@ -28,10 +28,11 @@ header {
   text-align: center;
   display: inline-block;
   width: 100vw;
-  border-bottom: 5px solid #541e4a;
+  border-bottom: 5px solid #542854;
   text-shadow: 0px 0px 2px #ffffffaa;
   background-color: #212230;
   z-index: 10;
+  padding-bottom: 20px;
 }
 
 header a {
@@ -42,17 +43,14 @@ header a:hover {
   text-shadow: 0px 0px 8px #ffffff;
 }
 
-.header-thing {
-  width: 100vw;
-}
-
 .title {
   display: inline-block;
   font-weight: bold;
   font-size: calc(2.5em + 1vw);
   padding: 0;
-  margin: 20px 30px;
-  width: fit-content;
+  margin: 20px 0px;
+  width: 100vw;
+  text-align: center;
 
   text-shadow: 0px 0px 10px #e165b6d6;
 }
@@ -192,14 +190,13 @@ header a:hover {
 .aboutme {
   text-align: center;
   font-size: 1.2em;
-  /* margin: 20px 30px; */
-  margin: auto;
-  padding: 15px 20px;
-  /* text-align: center; */
-  width: 50%;
-  box-shadow: 0 0 4px #ffffff;
-  padding-top: 120px;
-  /* margin-top: 500px; */
+  margin: 0;
+  width: 100vw;
+
+  padding: calc(120px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw) calc(15px + 5vw);
+  box-sizing: border-box;
+
+  border-bottom: 5px dotted #3c9696;
 }
 
 .aboutme a {
@@ -289,15 +286,6 @@ header a:hover {
     overflow: auto;
     overflow-x: hidden;
   }
-  .title {
-    text-align: center;
-    width: 100vw;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  header {
-    text-align: center;
-  }
   .section-title {
     text-align: center;
   }
@@ -329,15 +317,6 @@ header a:hover {
   }
   .skill img {
     width: calc((100vw - 135px) / 5);
-  }
-  .aboutme {
-    font-size: 1.2em;
-    margin: auto;
-    padding: 15px 20px;
-    /* text-align: center; */
-    width: 80%;
-    box-shadow: 0 0 5px #ffffff;
-    padding-top: 120px;
   }
   .resume-left {
     display: none;
