@@ -66,7 +66,7 @@ header > .title {
   color: #ecd2ff;
 }
 
-.skills-section {
+#skills-section {
   display: inline-grid;
   padding: 0 2vw;
   width: 35vw;
@@ -81,13 +81,13 @@ header > .title {
   text-shadow: 0px 0px 5px #c5cdff;
 }
 
-.skills-section .list-list {
+#skills-section .list-list {
   overflow-y: scroll;
   border-radius: 6px;
   padding-left: 20px;
 }
 
-.skills-section .list div {
+#skills-section .list div {
   display: inline-table;
 }
 
@@ -107,7 +107,7 @@ header > .title {
   border-radius: 10px;
 }
 
-.project-section {
+#projects-section {
   display: inline-grid;
   width: 59vw;
   height: calc(95vh - 100px);
@@ -117,7 +117,7 @@ header > .title {
   display: inline-table;
 }
 
-.project-section .list {
+#projects-section .list {
   overflow-y: scroll;
   border-radius: 6px;
 }
@@ -267,6 +267,10 @@ header > .title {
   border: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .skill img {
     width: calc((35vw - 70px) / 3);
@@ -274,6 +278,13 @@ header > .title {
 }
 
 @media only screen and (max-width: 1000px) {
+  .mobile {
+    /* TODO - make this look less cluttered on small screen */
+    display: inline;
+  }
+  .no-mobile {
+    display: none;
+  }
   html,
   body {
     max-height: auto;
@@ -283,20 +294,20 @@ header > .title {
   #portfolio-section > div > .title {
     text-align: center;
   }
-  .skills-section {
+  #skills-section {
     width: calc(100% - 60px);
     margin: 20px;
     height: auto;
   }
-  .skills-section .list-list {
+  #skills-section .list-list {
     overflow-y: auto;
   }
-  .project-section {
+  #projects-section {
     margin: 0 30px;
     width: calc(100vw - 60px);
     height: auto;
   }
-  .project-section .list {
+  #projects-section .list {
     overflow-y: auto;
     max-height: none;
   }
