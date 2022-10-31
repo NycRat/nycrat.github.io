@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
 html {
   font-family: "Quicksand", sans-serif;
-  background-color: #212230;
+  /* background-color: #212230; */
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(to right, #212230, #283330, #212230);
+  background-size: 200%;
+
   color: #ffffff;
 
   width: 100vw;
@@ -73,6 +86,43 @@ header > .title {
   height: calc(95vh - 100px);
 }
 
+#aboutme-section {
+  display: flex;
+  padding-top: calc(110px + 1.5vw);
+  padding-bottom: calc(5px + 0.5vw);
+  border-bottom: 2px solid #3c9696;
+
+  /* height: calc(95vh - 100px); */
+}
+
+/* #aboutme-image { */
+/*   width: 100%; */
+/*   object-fit: cover; */
+/*   max-width: none; */
+/*   max-height: none; */
+
+/*   aspect-ratio: 3/2; */
+/* } */
+
+#aboutme-text {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+
+  padding: 0 calc(15px + 2vw);
+  box-sizing: border-box;
+}
+
+#aboutme-text > a {
+  color: #c8e6ff;
+  transition: text-shadow 0.3s;
+  text-shadow: 0px 0px 8px #d6d7f57f;
+}
+
+#aboutme-text > a:hover {
+  text-shadow: 0px 0px 8px #d6d7f5;
+}
+
 #portfolio-section > div > .title {
   font-size: calc(1.5em + 1vw);
   margin: 20px 0;
@@ -117,24 +167,36 @@ header > .title {
   display: inline-table;
 }
 
-#projects-section .list {
+#projects-section .list-container {
   overflow-y: scroll;
-  border-radius: 6px;
+}
+
+#projects-section .list {
+  border-radius: 20px;
+  padding: 5px 0;
+
+  animation: background-pan 4s linear infinite;
+  background: linear-gradient(to right, #212c62, #00513a, #212c62);
+  background-size: 200%;
 }
 
 .project {
   display: inline-table;
-  width: calc(50% - 22px);
+  width: calc(50% - 28px);
   height: 350px;
   margin: 5px;
-  padding-left: 10px;
+  padding-left: 12px;
   border-radius: 20px;
   background-color: #302941;
   transition: box-shadow 0.3s;
 }
 
+.project:nth-child(odd) {
+  margin-left: 11px;
+}
+
 .project:hover {
-  box-shadow: 0px 0px 6px #ece4f5c3;
+  box-shadow: 0px 0px 5px #000000;
 }
 
 .project img {
@@ -177,29 +239,6 @@ header > .title {
 .project a {
   color: #8bf0a4;
   margin-left: 24px;
-}
-
-#aboutme-section > p {
-  text-align: center;
-  font-size: 1.2em;
-  margin: 0;
-  width: 100vw;
-
-  padding: calc(110px + 1.5vw) calc(15px + 5vw) calc(5px + 0.5vw)
-    calc(15px + 5vw);
-  box-sizing: border-box;
-
-  border-bottom: 2px solid #3c9696;
-}
-
-#aboutme-section > p > a {
-  color: #c8e6ff;
-  transition: text-shadow 0.3s;
-  text-shadow: 0px 0px 8px #d6d7f57f;
-}
-
-#aboutme-section > p > a:hover {
-  text-shadow: 0px 0px 8px #d6d7f5;
 }
 
 #resume-section > .left {
@@ -291,6 +330,13 @@ header > .title {
     overflow: auto;
     overflow-x: hidden;
   }
+  #aboutme-section {
+    display: block;
+    height: fit-content;
+  }
+  #aboutme-text {
+    width: 100%;
+  }
   #portfolio-section > div > .title {
     text-align: center;
   }
@@ -310,9 +356,18 @@ header > .title {
   #projects-section .list {
     overflow-y: auto;
     max-height: none;
+    padding: 0;
   }
   .project {
+    margin-left: 5px;
+    margin-bottom: 0;
     width: calc(100% - 22px);
+  }
+  .project:nth-child(odd) {
+    margin-left: 5px;
+  }
+  .project:last-child {
+    margin-bottom: 5px;
   }
   .project img {
     margin: 0;
