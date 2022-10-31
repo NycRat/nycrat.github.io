@@ -11,10 +11,10 @@
 
 html {
   font-family: "Quicksand", sans-serif;
-  /* background-color: #212230; */
   animation: background-pan 10s linear infinite;
   background: linear-gradient(to right, #212230, #283330, #212230);
   background-size: 200%;
+  background-color: #212230;
 
   color: #ffffff;
 
@@ -88,28 +88,32 @@ header > .title {
 
 #aboutme-section {
   display: flex;
-  padding-top: calc(110px + 1.5vw);
-  padding-bottom: calc(5px + 0.5vw);
+  padding-top: calc(100px + 1.5vw);
   border-bottom: 2px solid #3c9696;
 
-  /* height: calc(95vh - 100px); */
+  height: calc(95vh - 100px);
 }
 
-/* #aboutme-image { */
-/*   width: 100%; */
-/*   object-fit: cover; */
-/*   max-width: none; */
-/*   max-height: none; */
-
-/*   aspect-ratio: 3/2; */
-/* } */
+#aboutme-image {
+  width: 100vw;
+  object-fit: cover;
+  max-width: none;
+  max-height: none;
+}
 
 #aboutme-text {
+  /* display: none; */
+  position: absolute;
+  right: 15px;
+  top: 45%;
+  transform: translateY(-50%);
+
+  width: 30%;
   text-align: center;
   font-size: 1.2em;
   margin: 0;
 
-  padding: 0 calc(15px + 2vw);
+  padding: 0 calc(5px + 2vw);
   box-sizing: border-box;
 }
 
@@ -336,7 +340,14 @@ header > .title {
     height: fit-content;
   }
   #aboutme-text {
+    position: static;
+    transform: translateY(0%);
+
+    padding: 10px calc(10px + 2vw);
     width: 100%;
+  }
+  #aboutme-image {
+    display: none;
   }
   #portfolio-section > div > .title {
     text-align: center;
