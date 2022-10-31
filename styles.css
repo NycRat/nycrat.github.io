@@ -12,7 +12,7 @@
 html {
   font-family: "Quicksand", sans-serif;
   animation: background-pan 10s linear infinite;
-  background: linear-gradient(to right, #212230, #283330, #212230);
+  background: linear-gradient(to right, #212230, #283030, #212230);
   background-size: 200%;
   background-color: #212230;
 
@@ -45,6 +45,8 @@ header {
   background-color: #212230;
   z-index: 10;
   padding-bottom: 20px;
+
+  background: linear-gradient(to right, #212230, #23152d, #212230);
 }
 
 header a {
@@ -154,7 +156,7 @@ header > .title {
 }
 
 .skill:hover {
-  text-shadow: 0px 0px 3px #ffffb5;
+  text-shadow: 0px 0px 5px #ffff00;
 }
 
 .skill img {
