@@ -188,6 +188,7 @@ header > .title {
   padding-left: 12px;
   border-radius: 20px;
   background-color: #302941;
+  border: 1px solid #ffffff20;
   transition: box-shadow 0.3s;
 }
 
