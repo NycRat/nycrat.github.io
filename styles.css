@@ -88,6 +88,7 @@ header > .title {
 
 #aboutme-section {
   display: flex;
+  position: relative;
   padding-top: calc(100px + 1.5vw);
   border-bottom: 2px solid #3c9696;
 
@@ -340,14 +341,19 @@ header > .title {
     height: fit-content;
   }
   #aboutme-text {
-    position: static;
-    transform: translateY(0%);
+    /* position: static; */
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 
     padding: 10px calc(10px + 2vw);
     width: 100%;
+    background-color: #000000cc;
   }
   #aboutme-image {
-    display: none;
+    /* display: none; */
+    height: 80vh;
   }
   #portfolio-section > div > .title {
     text-align: center;
