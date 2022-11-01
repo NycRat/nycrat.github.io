@@ -46,7 +46,7 @@ header {
   z-index: 10;
   padding-bottom: 20px;
 
-  background: linear-gradient(to right, #212230, #23152d, #212230);
+  background: linear-gradient(to right, #121224, #0b0a15, #121224);
 }
 
 header > .title {
