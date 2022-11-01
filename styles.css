@@ -62,14 +62,26 @@ header > .title {
 }
 
 #nav-section > a {
-  color: #ecd2ff;
-  font-size: calc(1em + 0.2vw);
+  padding: 5px calc(4px + 0.35vw);
+  margin-left: calc(1px + 0.1vw);
+  border-radius: 100px;
+  border: 1px solid #bbbbbb;
 
-  transition: text-shadow 0.3s;
+  color: #ecd2ff;
+  font-size: calc(0.9em + 0.2vw);
+  background-color: #14181e81;
+  text-decoration: none;
+
+  transition: text-shadow 0.3s, border 0.3s;
+}
+
+#nav-section > a:first-child {
+  margin-left: 0;
 }
 
 #nav-section > a:hover {
   text-shadow: 0px 0px 8px #ffffff;
+  border: 1px solid #ffffff;
 }
 
 #aboutme-section {
@@ -116,7 +128,7 @@ header > .title {
 
 #contact-section > a {
   transition: text-shadow 0.3s;
-  color: #8bf0a4;
+  color: #c7dca4;
 }
 
 #contact-section > a:hover {
@@ -148,7 +160,7 @@ header > .title {
   padding-left: 20px;
   animation: background-pan 4s linear infinite;
   background: linear-gradient(to right, #212646, #2e0a2e, #212646);
-  
+
   background-size: 200%;
 }
 
