@@ -185,7 +185,7 @@ header > .title {
 }
 
 .skill img {
-  width: calc((35vw - 85px) / 4);
+  width: calc((36vw - 80px) / 4);
   border-radius: 10px;
 }
 
@@ -289,7 +289,7 @@ header > .title {
   font-size: calc(3vw + 3.5em);
   position: absolute;
   text-shadow: 0px 0px 15px #c3e100;
-  top: 33%;
+  top: 30%;
   left: calc((100vw - (80vh * (8.5 / 11))) / 4);
   transform: translateX(-25%);
 }
@@ -341,7 +341,7 @@ header > .title {
 
 @media only screen and (max-width: 1200px) {
   .skill img {
-    width: calc((35vw - 70px) / 3);
+    width: calc((36vw - 70px) / 3);
   }
 }
 
