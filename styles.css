@@ -72,13 +72,6 @@ header > .title {
   text-shadow: 0px 0px 8px #ffffff;
 }
 
-#skills-section {
-  display: inline-grid;
-  padding: 0 2vw;
-  width: 35vw;
-  height: calc(95vh - 100px);
-}
-
 #aboutme-section {
   display: flex;
   position: relative;
@@ -138,10 +131,30 @@ header > .title {
   text-shadow: 0px 0px 5px #c5cdff;
 }
 
-#skills-section .list-list {
+.list-container {
   overflow-y: scroll;
-  border-radius: 6px;
+  border-radius: 20px;
+}
+
+#skills-section {
+  display: inline-grid;
+  padding: 0 2vw;
+  width: 35vw;
+  height: calc(95vh - 100px);
+}
+
+#skills-section .list-list {
+  border-radius: 20px;
   padding-left: 20px;
+  animation: background-pan 4s linear infinite;
+  background: linear-gradient(to right, #212646, #2e0a2e, #212646);
+  
+  background-size: 200%;
+}
+
+#skills-section .list-list > h3 {
+  margin: 0;
+  padding: 12px 0;
 }
 
 #skills-section .list div {
@@ -172,10 +185,6 @@ header > .title {
 
 .middle {
   display: inline-table;
-}
-
-#projects-section .list-container {
-  overflow-y: scroll;
 }
 
 #projects-section .list {
