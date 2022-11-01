@@ -279,19 +279,19 @@ header > .title {
 #resume-section > .right {
   position: absolute;
   width: 60%;
-  height: calc(100% - 135px);
+  padding-bottom: 20px;
 
   left: 65%;
   transform: translateX(-50%);
 }
 
 #resume-section > .left > .title {
-  font-size: calc(5vw + 1em);
+  font-size: calc(3vw + 3.5em);
   position: absolute;
   text-shadow: 0px 0px 15px #c3e100;
-  top: calc(100% / 3);
+  top: 33%;
   left: calc((100vw - (80vh * (8.5 / 11))) / 4);
-  transform: translate(-25%, -50%);
+  transform: translateX(-25%);
 }
 
 #resume-section .container {
@@ -420,11 +420,20 @@ header > .title {
     width: calc((100vw - 135px) / 5);
   }
   #resume-section > .left {
-    display: none;
+    width: 100%;
+    height: auto;
+    /* display: none; */
+  }
+  #resume-section > .left > .title {
+  font-size: calc(1vw + 3.5em);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   #resume-section > .right {
     position: absolute;
     width: 100%;
+    padding-top: calc(5px + 10vh);
 
     left: 50%;
     transform: translateX(-50%);
