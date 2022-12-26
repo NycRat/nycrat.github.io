@@ -159,7 +159,7 @@ header > .title {
   border-radius: 20px;
   padding-left: 20px;
   animation: background-pan 4s linear infinite;
-  background: linear-gradient(to right, #212646, #2e0a2e, #212646);
+  background: linear-gradient(to right, #24313a, #2e0a2e, #24313a);
 
   background-size: 200%;
 }
