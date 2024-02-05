@@ -1,13 +1,16 @@
+import Header from "../components/header";
+import Footer from "../components/footer";
 import Image from "next/image";
-import Header from "./components/header";
-import Fireworks from "../public/fireworks.jpg";
-import Footer from "./components/footer";
+import AboutSection from "../components/about";
+import ProjectsSection from "../components/projects";
+import ContactSection from "../components/contact";
+import Fireworks from "../public/fireworks.webp";
 
 export default function Home() {
   return (
     <main className="relative bg-bg1">
       <Header />
-      <div id="about" className="relative h-screen">
+      <div id="home" className="relative h-screen">
         <div className="w-1/4 text-right absolute right-0 m-14 top-1/4 text-lg">
           {/* <h1 className="text-2xl"></h1> */}
           {/* TODO - REWRITE THIS THINGY */}
@@ -19,19 +22,13 @@ export default function Home() {
         <Image
           src={Fireworks}
           alt="fireworks"
-          className="w-full max-h-screen -z-10 object-cover"
+          className="min-w-full h-screen -z-10 object-cover"
           draggable="false"
         />
       </div>
-      {/* TODO - FIX THE ANCHOR OFFSET */}
-      <div id="projects" className="h-screen">
-        <h2 className="text-4xl">Projects</h2>
-        ha
-      </div>
-      <div id="contact" className="">
-        <h2 className="text-4xl">Contact</h2>
-        <br />
-      </div>
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
       <Footer />
     </main>
   );

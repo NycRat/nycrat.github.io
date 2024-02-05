@@ -7,6 +7,7 @@ const quicksand = Quicksand({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Web Developer - Eric Xiao (NycRat)",
   description: "i can make website :thumbsup",
+  authors: { name: "Eric Xiao", url: "https://github.com/NycRat" },
 };
 
 export default function RootLayout({
