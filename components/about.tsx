@@ -16,7 +16,7 @@ export default function AboutSection() {
           culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
-      <div className="col-span-2 bg-red-400">2</div>
+      <div className="col-span-2 bg-bg3">2</div>
     </div>
   );
 }

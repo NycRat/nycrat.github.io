@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header
-      className="p-4 border-slate-800 border-b-[1px] fixed w-full top-0 z-20 bg-[#23091466] h-[70px] opacity-[var(--header-opacity)]"
+      className="p-4 border-slate-800 border-b-[1px] fixed w-full top-0 z-50 bg-[#23091480] h-[70px] opacity-[var(--header-opacity)]"
       id="header"
     >
       <span className="flex items-center m-auto w-fit">

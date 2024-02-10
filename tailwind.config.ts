@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         bg1: "#0a0713",
         bg2: "#1b122c",
+        bg3: "#11001d",
         fg1: "#ffffff",
       },
     },
