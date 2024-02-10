@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Montserrat } from "next/font/google";
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 interface Word {
   text: string;
@@ -75,7 +74,6 @@ const WordCloud = () => {
 
       const interval = setInterval(() => {
         context.clearRect(0, 0, w, h);
-        console.log(words_attr[0].x);
         update();
       }, 15);
       return () => {
@@ -106,18 +104,19 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="h-[calc(100vh-70px)] grid grid-cols-3 grid-rows-1 gap-4 relative"
+      className="h-[calc(100vh-70px)] grid grid-cols-3 grid-rows-1 gap-4 relative 
+                 bg-gradient-to-r from-bg3 to-bg2"
     >
       <div className="absolute left-0 right-0 top-0 bottom-0">
-        <span className="absolute left-0 right-0 top-0 bottom-0 bg-[#0004]"></span>
         <WordCloud />
       </div>
-      <div className="z-10">
-        <div className="mt-4 bg-[radial-gradient(circle,_rgba(0,0,0,1)_0%,_rgba(0,0,0,1)_80%,_rgba(0,0,0,0)_100%)] p-14">
+
+      <div className="z-10 overflow-visible">
+        <div className="bg-bg3 m-14 shadow-[0_0_40px_50px_#110a19]">
           <h2 className="text-4xl mb-5 font-semibold">About Me</h2>
           <div>
-            Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused on
-            full-stack web development. I have been learning and working on
+            Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused
+            on full-stack web development. I have been learning and working on
             coding and web development for many years and have built many
             projects. All of my projects are on Github and are public to see and
             contribute to.

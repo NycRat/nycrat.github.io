@@ -10,8 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         bg1: "#0a0713",
-        bg2: "#1b122c",
-        bg3: "#11001d",
+        bg2: "#271b32",
+        bg3: "#110a19",
         fg1: "#ffffff",
       },
     },
