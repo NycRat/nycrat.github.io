@@ -48,7 +48,7 @@ export default function Home() {
         </span>
         {/* <h1 className="text-9xl absolute top-1/2 left-1/2 font-bold text-[#fff8]">wha</h1> */}
         <div className="text-right absolute right-14 top-24 text-lg">
-          <h1 className="text-6xl [text-shadow:_0_0_10px_#fff]">Eric Xiao</h1>
+          <h1 className="text-6xl [text-shadow:_0_0_10px_#fff] font-semibold">Eric Xiao</h1>
           <span className="inline-block h-[1px] w-full bg-white"></span>
           <span className="flex space-x-3 font-light text-3xl flex-col mt-6">
             <Link

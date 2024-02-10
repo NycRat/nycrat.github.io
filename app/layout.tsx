@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const quicksand = Quicksand({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Web Developer - Eric Xiao (NycRat)",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
