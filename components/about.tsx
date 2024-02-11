@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { Montserrat } from "next/font/google";
+import Me from "../public/me.webp";
+import Image from "next/image";
 
 interface Word {
   text: string;
@@ -12,10 +13,10 @@ interface Word {
 
 const WordCloud = () => {
   useEffect(() => {
-    const marketing =
+    const words_string =
       "Next.js React.js Tailwind AWS SEO Typescript C++ Rust Javascript Python HTML CSS Redux Rocket.rs Node.js Express MongoDB MySql Lightsail Docker REST Gatsby.js JWT UI/UX Solid.js Wordpress";
-    const words_attr: Word[] = [];
-    string_handle(marketing);
+    const words: Word[] = [];
+    string_handle(words_string);
 
     const canvas = document.getElementById("words") as HTMLCanvasElement | null;
     if (!canvas) {
@@ -41,9 +42,9 @@ const WordCloud = () => {
         return;
       }
 
-      for (let i = 0; i < words_attr.length; i++) {
-        words_attr[i].x = Math.random() * w;
-        words_attr[i].y = Math.random() * h;
+      for (let i = 0; i < words.length; i++) {
+        words[i].x = Math.random() * w;
+        words[i].y = Math.random() * h;
       }
 
       const update = () => {
@@ -51,23 +52,19 @@ const WordCloud = () => {
         context.fillStyle = "#fff";
         context.lineWidth = 2;
 
-        for (let i = 0; i < words_attr.length; i++) {
-          context.font = words_attr[i].font;
-          context.fillText(
-            words_attr[i].text,
-            words_attr[i].x,
-            words_attr[i].y,
-          );
-          words_attr[i].width = context.measureText(words_attr[i].text).width;
+        for (let i = 0; i < words.length; i++) {
+          context.font = words[i].font;
+          context.fillText(words[i].text, words[i].x, words[i].y);
+          words[i].width = context.measureText(words[i].text).width;
           context.stroke();
         }
 
-        for (let i = 0; i < words_attr.length; i++) {
-          if (words_attr[i].x > w) {
-            words_attr[i].x = -words_attr[i].width;
-            words_attr[i].y = Math.random() * h;
+        for (let i = 0; i < words.length; i++) {
+          if (words[i].x > w) {
+            words[i].x = -words[i].width;
+            words[i].y = Math.random() * h;
           } else {
-            words_attr[i].x += words_attr[i].speed;
+            words[i].x += words[i].speed;
           }
         }
       };
@@ -85,7 +82,7 @@ const WordCloud = () => {
     function string_handle(str: string) {
       const split_str = str.split(" ");
       for (let i = 0; i < split_str.length; i++) {
-        words_attr.push({
+        words.push({
           text: split_str[i],
           x: 0,
           y: 0,
@@ -114,23 +111,27 @@ export default function AboutSection() {
       <div className="z-10 overflow-visible">
         <div className="bg-bg3 m-14 shadow-[0_0_40px_50px_#110a19]">
           <h2 className="text-4xl mb-5 font-semibold">About Me</h2>
-          <div>
+          <div className="text-lg">
             Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused
             on full-stack web development. I have been learning and working on
             coding and web development for many years and have built many
             projects. All of my projects are on Github and are public to see and
             contribute to.
           </div>
-          <div className="mt-2">
-            Apart from coding, I enjoy photography and sports such as table
-            tennis and golf. I am interested in not only programming but also
+          <div className="mt-2 text-lg">
+            Apart from coding, I enjoy photography and learning various random
+            skills. I am interested in not only learning programming but also
             teaching, I have taught classes on C++ and hope to continue in the
             future on various different topics.
           </div>
         </div>
       </div>
-      <div className="col-span-2 bg-[#0009] z-40 m-14">
-        probably image here later
+      <div className="col-span-2 z-40 m-14 ml-4">
+        <Image
+          src={Me}
+          alt="Me, Eric Xiao"
+          className="object-cover w-full h-full rounded-xl"
+        />
       </div>
     </div>
   );
