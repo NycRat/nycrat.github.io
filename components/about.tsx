@@ -109,7 +109,7 @@ export default function AboutSection() {
       </div>
 
       <div className="z-10 overflow-visible">
-        <div className="bg-bg3 m-14 shadow-[0_0_40px_50px_#110a19]">
+        <div className="bg-bg3 m-14 shadow-[0_0_40px_50px_#110a19] font-light">
           <h2 className="text-4xl mb-5 font-semibold">About Me</h2>
           <div className="text-lg">
             Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused

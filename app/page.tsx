@@ -38,7 +38,6 @@ export default function Home() {
       <IntroSection />
       <AboutSection />
       <ProjectsSection />
-      <ContactSection />
       <Footer />
     </main>
   );

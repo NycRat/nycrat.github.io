@@ -12,7 +12,6 @@ const config: Config = {
         bg1: "#0a0713",
         bg2: "#271b32",
         bg3: "#110a19",
-        fg1: "#ffffff",
       },
     },
   },
