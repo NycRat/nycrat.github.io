@@ -3,7 +3,6 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import AboutSection from "../components/about";
 import ProjectsSection from "../components/projects";
-import ContactSection from "../components/contact";
 import { useEffect } from "react";
 import IntroSection from "@/components/intro";
 
