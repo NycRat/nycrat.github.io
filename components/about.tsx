@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import Me from "../public/me.webp";
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 interface Word {
   text: string;
@@ -87,7 +90,7 @@ const WordCloud = () => {
           x: 0,
           y: 0,
           width: 0,
-          font: (Math.random() * 50 + 15).toString() + "px Arial",
+          font: (Math.random() * 50 + 15).toString() + "px " + montserrat.style.fontFamily,
           speed: (Math.random() * 2) / 3 + 1,
         });
       }
