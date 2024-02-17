@@ -104,7 +104,7 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="h-[calc(100vh-70px)] lg:grid grid-cols-3 grid-rows-1 gap-4 relative 
+      className="min-h-[calc(100svh-70px)] lg:grid grid-cols-3 grid-rows-1 gap-4 relative 
                  bg-gradient-to-r from-bg3 to-bg2 flex flex-col"
     >
       <div className="absolute left-0 right-0 top-0 bottom-0">
@@ -129,11 +129,11 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <div className="col-span-2 z-40 lg:m-14 lg:ml-4 mx-4">
+      <div className="col-span-2 z-40 lg:p-14 lg:pl-4 mx-4 h-full p-2">
         <Image
           src={Me}
           alt="Me, Eric Xiao"
-          className="object-cover w-full h-full rounded-xl aspect-square"
+          className="object-cover w-full h-full rounded-xl"
         />
       </div>
     </div>

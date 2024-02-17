@@ -70,7 +70,7 @@ export default function ProjectsSection() {
   return (
     <div
       id="projects"
-      className="h-[calc(100vh-70px)] grid md:grid-cols-2 md:grid-rows-2 relative grid-cols-1 grid-rows-4"
+      className="h-[calc(100svh-70px)] grid md:grid-cols-2 md:grid-rows-2 relative grid-cols-1 grid-rows-4"
     >
       <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-7xl z-50 pointer-events-none [text-shadow:_0_0_10px_#fffb]">
         Projects
