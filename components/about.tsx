@@ -104,15 +104,15 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="h-[calc(100vh-70px)] grid grid-cols-3 grid-rows-1 gap-4 relative 
-                 bg-gradient-to-r from-bg3 to-bg2"
+      className="h-[calc(100vh-70px)] lg:grid grid-cols-3 grid-rows-1 gap-4 relative 
+                 bg-gradient-to-r from-bg3 to-bg2 flex flex-col"
     >
       <div className="absolute left-0 right-0 top-0 bottom-0">
         <WordCloud />
       </div>
 
       <div className="z-10 overflow-visible">
-        <div className="bg-bg3 m-14 shadow-[0_0_40px_50px_#110a19] font-light">
+        <div className="bg-bg3 md:p-10 p-6 lg:shadow-[0_0_40px_50px_#110a19] font-light bg-opacity-80 lg:bg-opacity-100">
           <h2 className="text-4xl mb-5 font-semibold">About Me</h2>
           <div className="text-lg">
             Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused
@@ -129,11 +129,11 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <div className="col-span-2 z-40 m-14 ml-4">
+      <div className="col-span-2 z-40 lg:m-14 lg:ml-4 mx-4">
         <Image
           src={Me}
           alt="Me, Eric Xiao"
-          className="object-cover w-full h-full rounded-xl"
+          className="object-cover w-full h-full rounded-xl aspect-square"
         />
       </div>
     </div>

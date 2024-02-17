@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 100%;
+  @media only screen and (max-width: 768px) {
+    font-size: 80%;
+  }
+}
+
 :root {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px;
+  scroll-padding-top: 60px;
   background: #1b122c;
   --header-opacity: 0;
+  @media only screen and (max-width: 640px) {
+    scroll-padding-top: 80px;
+  }
 }
 
 body {
@@ -34,4 +44,17 @@ body {
 
 .fade::after {
   right: 0;
+}
+
+.transition-shadow {
+  transition: text-shadow 0.15s ease-in-out; /* Transition for text shadow */
+}
+
+.transition-padding {
+  transition: padding 0.15s ease-in-out; /* Transition for padding */
+}
+
+.intro-text {
+  font-size: clamp(4.2rem, 6.02vw + 2.5rem, 6rem);
+  line-height: 1;
 }

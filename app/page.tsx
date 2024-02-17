@@ -12,6 +12,10 @@ export default function Home() {
 
     function update() {
       if (header) {
+        if (window.innerWidth <= 768) {
+          header.style.setProperty("--header-opacity", "1");
+          return;
+        }
         if (window.scrollY >= window.outerHeight) {
           header.style.setProperty("--header-opacity", "1");
         } else {
@@ -29,6 +33,11 @@ export default function Home() {
     update();
 
     window.addEventListener("scroll", update);
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
   }, []);
 
   return (

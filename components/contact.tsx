@@ -4,8 +4,8 @@ export default function ContactSection() {
   return (
     <div id="contact" className="p-10">
       <div className="w-fit">
-        <h2 className="text-4xl inline font-semibold">Contact Me, </h2>
-        <span className="text-2xl font-light">
+        <h2 className="text-dyn-lg inline font-semibold">Contact Me, </h2>
+        <span className="text-dyn-md font-light">
           for a{" "}
           <span className="[text-shadow:_0_0_10px_#fff] font-medium">
             website
@@ -20,10 +20,10 @@ export default function ContactSection() {
         <span className="h-[1px] bg-white block"></span>
       </div>
 
-      <div className="mt-5 pl-10 text-lg">
+      <div className="mt-5 md:pl-10 text-dyn-base">
         <Link
           href="mailto:ericxiao0000@gmail.com"
-          className="transition-all hover:[text-shadow:_0_0_4px_#fff] hover:pl-5"
+          className="transition-shadow transition-padding hover:[text-shadow:_0_0_4px_#fff] hover:pl-5"
         >
           &rarr; Email:{" "}
           <span className="underline font-semibold">
@@ -33,7 +33,7 @@ export default function ContactSection() {
         <br />
         <Link
           href="https://github.com/NycRat"
-          className="transition-all hover:[text-shadow:_0_0_4px_#fff] hover:pl-5"
+          className="transition-shadow transition-padding hover:[text-shadow:_0_0_4px_#fff] hover:pl-5"
         >
           &rarr; Github: <span className="underline font-semibold">NycRat</span>
         </Link>

@@ -7,12 +7,43 @@ export default function IntroSection() {
   return (
     <div id="home" className="relative h-screen z-20">
       <span className={montserrat.className}>
-        <h1 className="text-9xl absolute bottom-12 left-12 mix-blend-difference font-bold">
+        <h1 className="md:text-dyn-4xl absolute bottom-8 left-8 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
           Web Developer
         </h1>
+        <h1 className="md:text-dyn-4xl absolute bottom-8 left-8 text-[#fff3] font-bold hidden md:block whitespace-nowrap">
+          Web Developer
+        </h1>
+        <h1 className="absolute bottom-2 left-2">
+          <span className="mix-blend-difference font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-52 whitespace-nowrap flex flex-col h-52">
+            Eric Xiao
+          </span>
+          <span className="mix-blend-difference font-bold md:hidden intro-text whitespace-nowrap flex flex-col pl-2">
+            Web <br />
+            Developer
+          </span>
+        </h1>
+        <h1 className="absolute bottom-2 left-2">
+          <span className="text-[#ffcc] font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-52 whitespace-nowrap flex flex-col h-52">
+            Eric Xiao
+          </span>
+          <span className="text-[#fffc] font-bold md:hidden intro-text whitespace-nowrap flex flex-col pl-2">
+            Web <br />
+            Developer
+          </span>
+        </h1>
+        {/* <h1 className="absolute bottom-4 left-0 mix-blend-difference font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-56 whitespace-nowrap flex flex-col h-52"> */}
+        {/*   Eric Xiao <br /> */}
+        {/*   Web Developer */}
+        {/* </h1> */}
+        {/* <h1 className="absolute bottom-4 left-0 text-[#fffc] font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-56 whitespace-nowrap flex flex-col h-52"> */}
+        {/*   <span className="text-[#ffffcccc] align-top"> */}
+        {/*     Eric Xiao <br /> */}
+        {/*   </span> */}
+        {/*   Web Developer */}
+        {/* </h1> */}
       </span>
       {/* <h1 className="text-9xl absolute top-1/2 left-1/2 font-bold text-[#fff8]">wha</h1> */}
-      <div className="text-right absolute right-14 top-24 text-lg">
+      <div className="text-right absolute right-14 top-24 text-lg hidden md:block">
         <h1 className="text-6xl [text-shadow:_0_0_10px_#fff] font-semibold">
           Eric Xiao
         </h1>
