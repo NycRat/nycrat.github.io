@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="md:h-[20svh] h-52">
           <div className="absolute -bottom-[calc(200px-2vw)] right-52 translate-x-1/2 -rotate-[18deg] w-[5000px] h-96 overflow-hidden border-t-2 bg-bg2 border-bg2"></div>
           <h2 className="absolute bottom-10 right-10 text-6xl font-thin">
-            eric xiao
+            ERIC XIAO
           </h2>
         </div>
       </div>
