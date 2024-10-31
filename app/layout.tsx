@@ -6,7 +6,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Web Developer - Eric Xiao (NycRat)",
-  description: "Eric Xiao personal website, web development portfolio, projects, services",
+  description:
+    "Eric Xiao personal website, web development portfolio, projects, services",
   authors: { name: "Eric Xiao", url: "https://github.com/NycRat" },
 };
 
