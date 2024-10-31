@@ -66,11 +66,11 @@ export default function IntroSection() {
       </span>
       {/* <h1 className="text-9xl absolute top-1/2 left-1/2 font-bold text-[#fff8]">wha</h1> */}
       <div className="text-right absolute right-14 top-24 text-lg hidden md:block">
-        <h1 className="text-6xl [text-shadow:_0_0_10px_#fff] font-semibold">
+        <h1 className="text-7xl [text-shadow:_0_0_10px_#fff] font-semibold">
           Eric Xiao
         </h1>
         <span className="inline-block h-[1px] w-full bg-white"></span>
-        <span className="flex space-x-3 font-light text-3xl flex-col mt-6">
+        <span className="flex space-x-3 font-light text-4xl flex-col mt-6">
           <Link
             className="ml-auto hover:[text-shadow:_0_0_10px_#fff] transition-[text-shadow]"
             href={"#about"}

@@ -56,7 +56,7 @@ function Project({ name, link, imageSrc }: ProjectProps) {
       <h2
         className={
           "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 \
-           text-5xl font-medium text-center z-10 [text-shadow:_0_0_10px_#000] " +
+           text-5xl font-medium text-center z-10 [text-shadow:_0_0_10px_#000]" +
           montserrat.className
         }
       >
@@ -72,7 +72,7 @@ export default function ProjectsSection() {
       id="projects"
       className="h-[calc(100svh-70px)] grid md:grid-cols-2 md:grid-rows-2 relative grid-cols-1 grid-rows-4"
     >
-      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-7xl z-50 pointer-events-none [text-shadow:_0_0_10px_#fffb]">
+      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-8xl z-50 pointer-events-none [text-shadow:_0_0_10px_#fffb]">
         Projects
       </h2>
       {projects.map((project, i) => (

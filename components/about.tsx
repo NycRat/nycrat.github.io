@@ -127,24 +127,24 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="min-h-[calc(100svh-70px)] lg:grid grid-cols-3 grid-rows-1 gap-4 relative 
+      className="min-h-[calc(100svh-70px)] lg:grid grid-cols-5 gap-2 relative 
                  bg-gradient-to-r from-bg3 to-bg2 flex flex-col"
     >
       <div className="absolute left-0 right-0 top-0 bottom-0">
         <WordCloud />
       </div>
 
-      <div className="z-10 overflow-visible">
-        <div className="bg-bg3 md:p-10 p-6 lg:shadow-[0_0_40px_50px_#110a19] font-light bg-opacity-80 lg:bg-opacity-100">
-          <h2 className="text-4xl mb-5 font-semibold">About Me</h2>
-          <div className="text-lg">
+      <div className="z-10 overflow-visible col-span-2">
+        <div className="bg-bg3 xl:p-20 md:p-10 p-6 lg:shadow-[0_0_40px_50px_#110a19] font-light bg-opacity-80 lg:bg-opacity-100">
+          <h2 className="text-6xl mb-5 font-semibold">About Me</h2>
+          <div className="text-xl">
             Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused
             on full-stack web development. I have been learning and working on
             coding and web development for many years and have built many
             projects. All of my projects are on Github and are public to see and
             contribute to.
           </div>
-          <div className="mt-2 text-lg">
+          <div className="mt-2 text-xl">
             Apart from coding, I enjoy photography and learning various random
             skills. I am interested in not only learning programming but also
             teaching, I have taught classes on C++ and hope to continue in the
@@ -152,7 +152,7 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <div className="col-span-2 z-40 lg:p-14 lg:pl-4 mx-4 h-full p-2">
+      <div className="col-span-3 z-40 lg:p-14 lg:pl-4 mx-4 h-full p-2">
         <div className="w-full h-full overflow-hidden rounded-md">
           <Image
             src={Me}
