@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Me from "../public/me.webp";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
@@ -90,7 +90,10 @@ const WordCloud = () => {
           x: 0,
           y: 0,
           width: 0,
-          font: (Math.random() * 50 + 15).toString() + "px " + montserrat.style.fontFamily,
+          font:
+            (Math.random() * 50 + 15).toString() +
+            "px " +
+            montserrat.style.fontFamily,
           speed: (Math.random() * 2) / 3 + 1,
         });
       }
@@ -101,6 +104,26 @@ const WordCloud = () => {
 };
 
 export default function AboutSection() {
+  const parallaxImg = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY - window.innerHeight;
+      if (parallaxImg.current) {
+        // @ts-ignore
+        parallaxImg.current.style.transform = `translateY(${scrolled * 0.2}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div
       id="about"
@@ -130,11 +153,14 @@ export default function AboutSection() {
         </div>
       </div>
       <div className="col-span-2 z-40 lg:p-14 lg:pl-4 mx-4 h-full p-2">
-        <Image
-          src={Me}
-          alt="Me, Eric Xiao"
-          className="object-cover w-full h-full rounded-xl"
-        />
+        <div className="w-full h-full overflow-hidden rounded-md">
+          <Image
+            src={Me}
+            alt="Me, Eric Xiao"
+            className="object-cover w-full h-full rounded-md"
+            ref={parallaxImg}
+          />
+        </div>
       </div>
     </div>
   );

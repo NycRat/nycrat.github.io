@@ -3,9 +3,31 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 import Image from "next/image";
 import Fireworks from "../public/fireworks.webp";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+
 export default function IntroSection() {
+  const parallaxImg = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+      if (parallaxImg.current) {
+        // @ts-ignore
+        parallaxImg.current.style.transform = `translateY(${scrolled * 0.6}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div id="home" className="relative h-screen z-20">
+    <div id="home" className="relative h-screen z-20 overflow-hidden">
       <span className={montserrat.className}>
         <h1 className="md:text-dyn-4xl absolute bottom-8 left-8 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
           Web Developer
@@ -69,12 +91,15 @@ export default function IntroSection() {
           </Link>
         </span>
       </div>
-      <Image
-        src={Fireworks}
-        alt="fireworks"
-        className="min-w-full h-screen -z-10 object-cover"
-        draggable="false"
-      />
+      <div className="relative -z-10">
+        <Image
+          src={Fireworks}
+          alt="fireworks"
+          className="min-w-full h-screen object-cover will-change-transform"
+          draggable="false"
+          ref={parallaxImg}
+        />
+      </div>
     </div>
   );
 }
