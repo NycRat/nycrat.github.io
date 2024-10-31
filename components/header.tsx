@@ -15,7 +15,7 @@ function DropdownMenu() {
 export default function Header() {
   return (
     <header
-      className="border-slate-800 border-b-[1px] fixed w-full top-0 z-50 bg-[#23091480] sm:h-[60px] h-[80px] opacity-[var(--header-opacity)]"
+      className="border-slate-800 border-b-[1px] fixed w-full top-0 z-50 bg-[#271b32cc] sm:h-[60px] h-[80px] opacity-[var(--header-opacity)]"
       id="header"
     >
       <div className="flex items-center m-auto w-fit sm:h-full h-[50px]">
