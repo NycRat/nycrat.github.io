@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <div id="contact" className="p-10">
+    <div id="contact" className="p-10 lg:pl-20 lg:pt-20">
       <div className="w-fit">
-        <h2 className="text-dyn-lg inline font-semibold">Contact Me, </h2>
+        <h2 className="text-dyn-lg inline font-bold">Contact Me, </h2>
         <span className="text-dyn-md font-light">
           for a{" "}
           <span className="[text-shadow:_0_0_10px_#fff] font-medium">
@@ -12,10 +12,10 @@ export default function ContactSection() {
           </span>
           , to{" "}
           <span className="[text-shadow:_0_0_10px_#fff] font-medium">
-            learn
+            learn programming
           </span>
-          , or for whatever other reason{" "}
-          <span className="[text-shadow:_0_0_10px_#fff] font-medium">:P</span>
+          {/* , or for whatever other reason{" "} */}
+          {/* <span className="[text-shadow:_0_0_10px_#fff] font-medium">:P</span> */}
         </span>
         <span className="h-[1px] bg-white block"></span>
       </div>
