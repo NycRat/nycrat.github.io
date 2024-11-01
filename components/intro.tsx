@@ -29,10 +29,10 @@ export default function IntroSection() {
   return (
     <div id="home" className="relative h-screen z-20 overflow-hidden">
       <span className={montserrat.className}>
-        <h1 className="md:text-dyn-4xl absolute bottom-8 left-8 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
+        <h1 className="md:text-dyn-4xl absolute bottom-8 left-16 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
           Web Developer
         </h1>
-        <h1 className="md:text-dyn-4xl absolute bottom-8 left-8 text-[#fff3] font-bold hidden md:block whitespace-nowrap">
+        <h1 className="md:text-dyn-4xl absolute bottom-8 left-16 text-[#fff3] font-bold hidden md:block whitespace-nowrap">
           Web Developer
         </h1>
         <h1 className="absolute bottom-2 left-2">
