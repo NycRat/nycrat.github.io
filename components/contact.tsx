@@ -37,6 +37,14 @@ export default function ContactSection() {
         >
           &rarr; Github: <span className="underline font-semibold">NycRat</span>
         </Link>
+        <br />
+        <Link
+          href="https://www.linkedin.com/in/eric-xiao-449134314"
+          className="transition-shadow transition-padding hover:[text-shadow:_0_0_4px_#fff] hover:pl-5"
+        >
+          &rarr; LinkedIn:{" "}
+          <span className="underline font-semibold">Eric Xiao</span>
+        </Link>
       </div>
     </div>
   );
