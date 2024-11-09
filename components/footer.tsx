@@ -1,5 +1,6 @@
 import ContactSection from "./contact";
 
+// TODO design this better
 export default function Footer() {
   return (
     <footer className="overflow-hidden relative">

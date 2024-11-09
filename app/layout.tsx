@@ -5,9 +5,9 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Web Developer - Eric Xiao (NycRat)",
+  title: "Developer, Teacher - Eric Xiao (NycRat)",
   description:
-    "Eric Xiao personal website, web development portfolio, projects, services",
+    "Eric Xiao's personal website, web development portfolio, projects, experience, teaching, programming.",
   authors: { name: "Eric Xiao", url: "https://github.com/NycRat" },
 };
 

@@ -1,5 +1,4 @@
-import { Montserrat } from "next/font/google";
-const montserrat = Montserrat({ subsets: ["latin"] });
+// TODO fix this abomiination
 import Image from "next/image";
 import Fireworks from "../public/fireworks.webp";
 import Link from "next/link";
@@ -28,7 +27,7 @@ export default function IntroSection() {
 
   return (
     <div id="home" className="relative h-screen z-20 overflow-hidden">
-      <span className={montserrat.className}>
+      <span>
         <h1 className="md:text-dyn-4xl absolute bottom-8 left-16 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
           Web Developer
         </h1>
@@ -53,18 +52,7 @@ export default function IntroSection() {
             Developer
           </span>
         </h1>
-        {/* <h1 className="absolute bottom-4 left-0 mix-blend-difference font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-56 whitespace-nowrap flex flex-col h-52"> */}
-        {/*   Eric Xiao <br /> */}
-        {/*   Web Developer */}
-        {/* </h1> */}
-        {/* <h1 className="absolute bottom-4 left-0 text-[#fffc] font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-56 whitespace-nowrap flex flex-col h-52"> */}
-        {/*   <span className="text-[#ffffcccc] align-top"> */}
-        {/*     Eric Xiao <br /> */}
-        {/*   </span> */}
-        {/*   Web Developer */}
-        {/* </h1> */}
       </span>
-      {/* <h1 className="text-9xl absolute top-1/2 left-1/2 font-bold text-[#fff8]">wha</h1> */}
       <div className="text-right absolute right-14 top-24 text-lg hidden md:block">
         <h1 className="text-7xl [text-shadow:_0_0_10px_#fff] font-semibold">
           Eric Xiao

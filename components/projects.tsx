@@ -1,13 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import { Montserrat } from "next/font/google";
 import Photography from "../public/photo.webp";
 import Tasker from "../public/tasker.webp";
 import Doomsday from "../public/doomsday.webp";
 import Fireworks from "../public/fireworks.webp";
 import Image, { StaticImageData } from "next/image";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
+import AvahPage from "./avahPage";
 
 interface ProjectProps {
   name: string;
@@ -42,7 +40,7 @@ function Project({ name, link, imageSrc }: ProjectProps) {
   return (
     <Link
       href={link}
-      className="relative border-transparent bg-bg1"
+      className="relative bg-bg1"
       rel="noopener noreferrer"
       target="_blank"
     >
@@ -51,13 +49,11 @@ function Project({ name, link, imageSrc }: ProjectProps) {
         alt={"Project: " + name}
         className="min-w-full h-full object-cover"
       />
-      <span className="absolute left-0 right-0 top-0 bottom-0 bg-[#0013] hover:bg-transparent z-20 transition-colors"></span>
-      <span className="absolute left-0 right-0 top-0 bottom-0 bg-[#0001]"></span>
+      <span className="absolute left-0 right-0 top-0 bottom-0 bg-black bg-opacity-20 hover:bg-opacity-5 z-20 transition-colors"></span>
       <h2
         className={
           "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 \
-           text-5xl font-medium text-center z-10 [text-shadow:_0_0_10px_#000]" +
-          montserrat.className
+           text-5xl font-bold text-center z-10 [text-shadow:_0_0_30px_#000]"
         }
       >
         {name}
@@ -68,16 +64,16 @@ function Project({ name, link, imageSrc }: ProjectProps) {
 
 export default function ProjectsSection() {
   return (
-    <div
+    <AvahPage
       id="projects"
-      className="h-[calc(100svh-70px)] grid md:grid-cols-2 md:grid-rows-2 relative grid-cols-1 grid-rows-4"
+      className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 relative"
     >
-      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-semibold text-8xl z-50 pointer-events-none [text-shadow:_0_0_10px_#fffb]">
+      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-black text-8xl z-50 pointer-events-none [text-shadow:_0_0_10px_#fff]">
         Projects
       </h2>
       {projects.map((project, i) => (
-        <Project {...project} key={i} />
+        <Project key={i} {...project} />
       ))}
-    </div>
+    </AvahPage>
   );
 }

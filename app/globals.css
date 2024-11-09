@@ -4,54 +4,34 @@
 
 html {
   font-size: 100%;
+
   @media only screen and (max-width: 768px) {
+    font-size: 85%;
+  }
+
+  @media only screen and (max-width: 640px) {
     font-size: 70%;
   }
 }
 
 :root {
   scroll-behavior: smooth;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 80px;
   background: #1b122c;
+  color: #ffffff;
   --header-opacity: 0;
+
   @media only screen and (max-width: 640px) {
     scroll-padding-top: 80px;
   }
 }
 
-body {
-  color: #ffffff;
-}
-
-.fade::before,
-.fade::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-.fade::before {
-  left: 0;
-}
-
-.fade::after {
-  right: 0;
-}
-
 .transition-shadow {
-  transition: text-shadow 0.15s ease-in-out; /* Transition for text shadow */
+  transition: text-shadow 0.15s ease-in-out;
 }
 
 .transition-padding {
-  transition: padding 0.15s ease-in-out; /* Transition for padding */
+  transition: padding 0.15s ease-in-out;
 }
 
 .intro-text {
