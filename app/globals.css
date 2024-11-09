@@ -38,3 +38,7 @@ html {
   font-size: clamp(4.2rem, 6.02vw + 2.5rem, 6rem);
   line-height: 1;
 }
+
+.glo {
+  text-shadow: 0 0 10px #fff;
+}
