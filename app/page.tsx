@@ -5,6 +5,7 @@ import AboutSection from "../components/about";
 import ProjectsSection from "../components/projects";
 import { useEffect } from "react";
 import IntroSection from "@/components/intro";
+import ExperienceSection from "@/components/experience";
 
 export default function Home() {
   useEffect(() => {
@@ -46,6 +47,7 @@ export default function Home() {
       <IntroSection />
       <AboutSection />
       <ProjectsSection />
+      <ExperienceSection />
       <Footer />
     </main>
   );

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export default function AvahPage({
+export default function Page({
   children,
   className,
   id,

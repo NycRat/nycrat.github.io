@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Me from "@/public/me.webp";
 import Image from "next/image";
-import AvahPage from "@/components/avahPage";
+import Page from "@/components/page";
 import WordCloud from "@/components/wordCloud";
 
 export default function AboutSection() {
@@ -26,7 +26,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <AvahPage
+    <Page
       id="about"
       className="lg:grid grid-cols-5 relative bg-gradient-to-r from-bg3 to-bg2 flex flex-col"
     >
@@ -61,6 +61,6 @@ export default function AboutSection() {
           ref={parallaxImg}
         />
       </div>
-    </AvahPage>
+    </Page>
   );
 }

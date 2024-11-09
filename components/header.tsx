@@ -5,6 +5,7 @@ function Links() {
     <>
       <Link href={"#about"}>About</Link>
       <Link href={"#projects"}>Projects</Link>
+      <Link href={"#experience"}>Experience</Link>
       <Link href={"#contact"}>Contact</Link>
     </>
   );

@@ -5,7 +5,7 @@ import Tasker from "../public/tasker.webp";
 import Doomsday from "../public/doomsday.webp";
 import Fireworks from "../public/fireworks.webp";
 import Image, { StaticImageData } from "next/image";
-import AvahPage from "./avahPage";
+import Page from "./page";
 
 interface ProjectProps {
   name: string;
@@ -64,7 +64,7 @@ function Project({ name, link, imageSrc }: ProjectProps) {
 
 export default function ProjectsSection() {
   return (
-    <AvahPage
+    <Page
       id="projects"
       className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 relative"
     >
@@ -74,6 +74,6 @@ export default function ProjectsSection() {
       {projects.map((project, i) => (
         <Project key={i} {...project} />
       ))}
-    </AvahPage>
+    </Page>
   );
 }

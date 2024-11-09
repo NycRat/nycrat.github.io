@@ -73,6 +73,12 @@ export default function IntroSection() {
           </Link>
           <Link
             className="ml-auto hover:[text-shadow:_0_0_10px_#fff] transition-[text-shadow]"
+            href={"#experience"}
+          >
+            Experience
+          </Link>
+          <Link
+            className="ml-auto hover:[text-shadow:_0_0_10px_#fff] transition-[text-shadow]"
             href={"#contact"}
           >
             Contact
