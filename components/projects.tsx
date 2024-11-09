@@ -68,7 +68,7 @@ export default function ProjectsSection() {
       id="projects"
       className="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 relative"
     >
-      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-black text-8xl z-50 pointer-events-none glo">
+      <h2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-black text-8xl z-40 pointer-events-none glo">
         Projects
       </h2>
       {projects.map((project, i) => (
