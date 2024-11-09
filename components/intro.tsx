@@ -2,7 +2,28 @@
 import Image from "next/image";
 import Fireworks from "../public/fireworks.webp";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
+
+function SpecialAvahText({
+  className,
+  children,
+}: {
+  className?: string;
+  children?: ReactNode;
+}) {
+  return (
+    <span className="font-bold whitespace-nowrap">
+      <h1
+        className={"md:text-dyn-4xl mix-blend-difference absolute " + className}
+      >
+        {children}
+      </h1>
+      <h1 className={"md:text-dyn-4xl text-[#fffff19a] absolute " + className}>
+        {children}
+      </h1>
+    </span>
+  );
+}
 
 export default function IntroSection() {
   const parallaxImg = useRef(null);
@@ -28,12 +49,9 @@ export default function IntroSection() {
   return (
     <div id="home" className="relative h-screen z-20 overflow-hidden">
       <span>
-        <h1 className="md:text-dyn-4xl absolute bottom-8 left-16 mix-blend-difference font-bold hidden md:block whitespace-nowrap">
+        <SpecialAvahText className="bottom-8 left-16 hidden md:block">
           Web Developer
-        </h1>
-        <h1 className="md:text-dyn-4xl absolute bottom-8 left-16 text-[#fff3] font-bold hidden md:block whitespace-nowrap">
-          Web Developer
-        </h1>
+        </SpecialAvahText>
         <h1 className="absolute bottom-2 left-2">
           <span className="mix-blend-difference font-bold md:hidden intro-text -rotate-90 [transform-origin:_bottom_left] translate-x-52 whitespace-nowrap flex flex-col h-52">
             Eric Xiao

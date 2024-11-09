@@ -6,7 +6,9 @@ function Links() {
       <Link href={"#about"}>About</Link>
       <Link href={"#projects"}>Projects</Link>
       <Link href={"#experience"}>Experience</Link>
-      <Link href={"#contact"}>Contact</Link>
+      <Link href={"#contact"} className="sm:block hidden">
+        Contact
+      </Link>
     </>
   );
 }

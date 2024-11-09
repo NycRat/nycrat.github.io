@@ -13,7 +13,7 @@ export default function Home() {
 
     function update() {
       if (header) {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth < 768) {
           header.style.setProperty("--header-opacity", "1");
           return;
         }
