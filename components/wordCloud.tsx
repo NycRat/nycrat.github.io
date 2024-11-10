@@ -32,6 +32,13 @@ export default function WordCloud() {
       canvas.height = window.innerHeight;
       w = canvas.width;
       h = canvas.height;
+
+      const context = canvas.getContext("2d");
+      if (context) {
+        context.strokeStyle = "black";
+        context.fillStyle = "#fff";
+        context.lineWidth = 2;
+      }
     };
 
     resizeCanvas();
@@ -48,17 +55,10 @@ export default function WordCloud() {
         words[i].y = Math.random() * h;
       }
 
-      context.strokeStyle = "black";
-      context.fillStyle = "#fff";
-      context.lineWidth = 2;
-      context.font = words[0].font;
-
-      for (let i = 0; i < words.length; i++) {
-        words[i].width = context.measureText(words[i].text).width;
-      }
-
       const update = () => {
         for (let i = 0; i < words.length; i++) {
+          context.font = words[i].font;
+          words[i].width = context.measureText(words[i].text).width;
           context.fillText(words[i].text, words[i].x, words[i].y);
           context.stroke();
         }
@@ -93,7 +93,7 @@ export default function WordCloud() {
           y: 0,
           width: 0,
           font:
-            (Math.random() * 50 + 15).toString() +
+            (Math.random() * 30 + 45).toString() +
             "px " +
             montserrat.style.fontFamily,
           speed: (Math.random() * 2) / 3 + 1,
