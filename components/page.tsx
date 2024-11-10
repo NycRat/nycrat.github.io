@@ -10,7 +10,7 @@ export default function Page({
   id?: string;
 }) {
   return (
-    <section className={"min-h-[calc(100svh-80px)] " + className} id={id}>
+    <section className={"md:min-h-[calc(100svh-80px)] " + className} id={id}>
       {children}
     </section>
   );
