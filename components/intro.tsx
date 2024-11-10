@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Fireworks from "../public/fireworks.webp";
+import Fireworks from "@/public/fireworks.webp";
 import Link from "next/link";
 import { ReactNode, useEffect, useRef } from "react";
 

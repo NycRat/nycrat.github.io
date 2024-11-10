@@ -1,4 +1,4 @@
-import ContactSection from "./contact";
+import ContactSection from "@/components/contact";
 
 // TODO design this better
 export default function Footer() {

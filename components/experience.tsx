@@ -1,4 +1,4 @@
-import Page from "./page";
+import Page from "@/components/page";
 
 interface ExperienceInfo {
   position: string;

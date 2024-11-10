@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import Photography from "../public/photo.webp";
-import Tasker from "../public/tasker.webp";
-import Doomsday from "../public/doomsday.webp";
-import Fireworks from "../public/fireworks.webp";
+import Photography from "@/public/photo.webp";
+import Tasker from "@/public/tasker.webp";
+import Doomsday from "@/public/doomsday.webp";
+import Fireworks from "@/public/fireworks.webp";
 import Image, { StaticImageData } from "next/image";
-import Page from "./page";
+import Page from "@/components/page";
 
 interface ProjectProps {
   name: string;

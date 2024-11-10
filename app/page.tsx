@@ -1,8 +1,8 @@
 "use client";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import AboutSection from "../components/about";
-import ProjectsSection from "../components/projects";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import AboutSection from "@/components/about";
+import ProjectsSection from "@/components/projects";
 import { useEffect } from "react";
 import IntroSection from "@/components/intro";
 import ExperienceSection from "@/components/experience";
