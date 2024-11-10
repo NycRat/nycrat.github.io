@@ -39,8 +39,8 @@ export default function AboutSection() {
         <div className="bg-bg3 xl:p-20 md:p-10 p-6 font-light bg-opacity-80">
           <h2 className="text-6xl mb-5 font-black glo">About Me</h2>
           <div className="text-xl">
-            Hi! I'm Eric; I am a programmer from Canada currently focused on
-            full-stack web development. I have been learning and working on
+            Hi! I&rsquo;m Eric; I am a programmer from Canada currently focused
+            on full-stack web development. I have been learning and working on
             coding and web development for many years and have built many
             projects. All of my projects are on Github and are public to see and
             contribute to.
