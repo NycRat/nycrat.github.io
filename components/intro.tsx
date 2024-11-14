@@ -106,6 +106,7 @@ export default function IntroSection() {
           className="min-w-full h-screen object-cover will-change-transform"
           draggable="false"
           ref={parallaxImg}
+          priority
         />
       </div>
     </div>
